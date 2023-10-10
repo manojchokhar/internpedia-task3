@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="calcTemp" onsubmit="calculateTemp(); return false">
+            <br>
+            <div class="deg-first">
+            <label for="" style="color: rgb(152, 151, 151);">Degrees</label><br>
+            <input type="number" name="temp" id="temp" value="0">
+            </div>
+            <div class="option-fah">
+
+                <label for="" style="color: rgb(152, 151, 151);">Type</label><br>
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel">&#176;Celsius</option>
+                <option value="fah" selected>&#176;Fahrenheit</option>
+            </select>
+            </div>
+            <br>
+            <div class="submit-div">
+            <button type="submit" name="temp" id="submit" style="background-color: rgb(0, 179, 255); margin-left: 30px;height: 50px;  width: 80px;  border: none; color: white;" >Convert</button>
+            </div>
+            <br>
+            <div class="final-result">
+            <span id="result"></span>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
